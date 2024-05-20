@@ -16,11 +16,23 @@ namespace Mango.Web.Controllers
         }
         public IActionResult Login()
         {
-            LoginRequestDto loginRequestDto = new LoginRequestDto();
             return View();
         }
 
-        public async Task<IActionResult> Register()
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginRequestDto loginRequestDto)
+        {
+            var result = await _authService.LoginAsync(loginRequestDto);
+            if (result != null && result.IsSuccess)
+            {
+                TempData["success"] = "Login Successful";
+                return RedirectToPage("/Coupon/CouponIndex");
+            }
+            return View();
+        }
+
+
+        public IActionResult Register()
         {
             AssignRoleDropdownItems();
             return View();
