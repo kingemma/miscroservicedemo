@@ -1,0 +1,9 @@
+/Mango.Services.AuthAPI/bin
+/Mango.Services.AuthAPI/obj
+
+/Mango.Services.CouponAPI/bin
+/Mango.Services.CouponAPI/obj
+
+/Mango.Web/bin
+/Mango.Web/obj
+*.csproj.user
