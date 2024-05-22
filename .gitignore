@@ -7,3 +7,9 @@
 /Mango.Web/bin
 /Mango.Web/obj
 *.csproj.user
+.vs/Mango/v17/.suo
+*.v2
+*.vsidx
+*.v2
+.vs/Mango/FileContentIndex/b60f00de-4502-44f7-bce3-028531d92848.vsidx
+.vs/Mango/DesignTimeBuild/.dtbcache.v2

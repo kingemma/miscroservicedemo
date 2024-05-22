@@ -7,7 +7,7 @@
 
         public static string RoleAdmin = "Admin";
         public static string RoleCustom = "Custom";
-
+        public const string TokenCookie = "JWTToken";
         public enum ApiType
         {
             GET = 0,
